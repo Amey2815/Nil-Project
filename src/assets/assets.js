@@ -3,7 +3,7 @@ import Logonil from "./logo2.png"
 import facebook from "./facebook.png"
 import instagram from "./instagram.png"
 import twitter from "./twitter.png"
-import homeposter from "./homeposter.png"
+import homePoster from "./homeposter.png"
 import one from "./01.jpg"
 import two from "./02.jpg"
 import three from "./03.jpg"
@@ -22,7 +22,7 @@ export const assets  = {
     facebook,
     instagram,
     twitter,
-    homeposter,
+    homePoster,
     one,
     two,
     three,

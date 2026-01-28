@@ -58,7 +58,7 @@ const Home = () => {
 
       <div className='min-h-screen overflow-hidden' >
         <Navbar />
-        <img className='min-h-screen' src={assets.homeposter} alt="" />
+        <img className='min-h-screen' src={assets.homePoster} alt="" />
       </div>
 
       <div className='grid grid-cols-5 gap-1 mx-2 my-5'>
