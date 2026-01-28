@@ -33,7 +33,7 @@ const Home = () => {
       image: assets.nine
     },
     {
-      image: assets.one
+      image: assets.eight
     },
     {
       image: assets.two
@@ -56,18 +56,24 @@ const Home = () => {
   return (
     <div className='min-h-screen' >
 
-      <div className='min-h-screen overflow-hidden' >
+      <div className='h-full md:min-h-screen overflow-hidden' >
         <Navbar />
-        <img className='min-h-screen' src={assets.homePoster} alt="" />
+        <img className=' h-full md:min-h-screen object-cover' src={assets.homePoster} alt="" />
       </div>
 
-      <div className='grid grid-cols-5 gap-1 mx-2 my-5'>
-        {image.map((image, index) => (
-          <div className=' overflow-hidden' key={index}>
-            <img className='w-75.25 h-75.25 object-cover object-center' src={image.image} alt="" srcset="" />
-          </div>
-        ))}
-      </div>
+      <div className="h-full  grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-1 mx-2 my-5">
+  {image.map((image, index) => (
+    <div key={index} className="min-w-75 min-h-75 flex justify-center">
+      <img
+        src={image.image}
+        alt=""
+        className=" object-cover object-center w-full h-full"
+      />
+    </div>
+  ))}
+</div>
+
+
 
 
     </div>
