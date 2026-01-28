@@ -63,7 +63,7 @@ const Home = () => {
 
       <div className='grid grid-cols-5 gap-1 mx-2 my-5'>
         {image.map((image, index) => (
-          <div className='' key={index}>
+          <div className=' overflow-hidden' key={index}>
             <img className='w-75.25 h-75.25 object-cover object-center' src={image.image} alt="" srcset="" />
           </div>
         ))}
